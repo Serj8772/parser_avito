@@ -32,7 +32,6 @@ opts.add_argument('--headless') # запуск в фоновом режиме
 driver = webdriver.Chrome(options=opts)
 
 
-
 while True:
 
     # загружаем ссылки из csv
