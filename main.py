@@ -40,7 +40,6 @@ while True:
         reader = csv.reader(file)
         existing_rows = list(reader)
 
-
     try:
         driver.implicitly_wait(10)          # ожидание появление элемента в секундах
 

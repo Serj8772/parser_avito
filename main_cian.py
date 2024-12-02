@@ -78,3 +78,4 @@ while True:
         print(ex)
 
     time.sleep(30 * 60) # обновление данных каждые 30 минут
+
