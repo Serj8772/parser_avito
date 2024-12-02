@@ -11,6 +11,7 @@ import csv
 
 from settings import token, id_channel, link_avito
 
+
 # настройка бота
 bot = telebot.TeleBot(token)
 
@@ -30,6 +31,7 @@ opts.add_argument("--disable-blink-features=AutomationControlled")
 opts.add_argument('--headless') # запуск в фоновом режиме
 
 driver = webdriver.Chrome(options=opts)
+
 
 
 while True:
