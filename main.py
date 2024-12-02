@@ -11,7 +11,6 @@ import csv
 
 from settings import token, id_channel, link_avito
 
-
 # настройка бота
 bot = telebot.TeleBot(token)
 
