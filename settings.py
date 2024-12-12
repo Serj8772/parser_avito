@@ -1,10 +1,10 @@
 delay = 60 # перерыв между сеансами в минутах
 
 # бот для отправки ссылок
-token = '8117321088:AAGqq9vLFLbkGpbtKKgxjoDUSURvl_6glHU'    # телеграм бот
-id_channel = '-1002409932666'   # телеграм канал
+token = ''    # телеграм бот
+id_channel = ''   # телеграм канал
 # канал для логов.
-id_channel_for_logs = '-1002407053688'   # телеграм канал
+id_channel_for_logs = ''   # телеграм канал
 
 # ссылка на поиск
 link='https://www.avito.ru/lobnya/kvartiry/sdam/na_dlitelnyy_srok-ASgBAgICAkSSA8gQ8AeQUg?context=H4sIAAAAAAAA_wEjANz_YToxOntzOjg6ImZyb21QYWdlIjtzOjc6ImNhdGFsb2ciO312FITcIwAAAA&f=ASgBAgICA0SSA8gQ8AeQUrCzFP6hjwM&s=104'
