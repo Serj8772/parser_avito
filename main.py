@@ -19,15 +19,12 @@ bot = telebot.TeleBot(token)
 user_agent = fake_useragent.UserAgent().random
 
 opts = webdriver.ChromeOptions()
-opts.add_argument('user-agent=' + user_agent)
-
-opts.add_argument('--headless') # запуск в фоновом режиме
+opts.add_argument(user_agent)
 opts.add_argument("--disable-blink-features=AutomationControlled")
+opts.add_argument('--headless') # запуск в фоновом режиме
 opts.add_argument('--no-sandbox') # убирает ошибку запуска в headless режиме на сервере
-
-
-prefs = {"profile.managed_default_content_settings.javascript": 2} # отключаем javascript
-opts.add_experimental_option("prefs", prefs) # отключаем javascript
+# prefs = {"profile.managed_default_content_settings.javascript": 2} # отключаем javascript
+# opts.add_experimental_option("prefs", prefs) # отключаем javascript
 
 driver = webdriver.Chrome(options=opts)
 
@@ -41,7 +38,7 @@ while True:
         existing_rows = list(reader)
 
     try:
-        driver.implicitly_wait(1)          # ожидание появление элемента в секундах
+        driver.implicitly_wait(20)          # ожидание появление элемента в секундах
 
         #  ссылка на страницу поиска
         driver.get(link) # заходим на сайт
